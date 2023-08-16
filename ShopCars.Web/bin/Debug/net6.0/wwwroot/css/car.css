@@ -1,0 +1,7 @@
+﻿.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+}

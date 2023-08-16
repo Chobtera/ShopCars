@@ -9,7 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 string connection = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(connection, ServerVersion.AutoDetect(connection)));
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connection));
+
 
 //IMapper mapper = MappingProfile.RegisterMaps().CreateMapper();
 //builder.Services.AddSingleton(mapper);

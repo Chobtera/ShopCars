@@ -27,7 +27,7 @@ namespace ShopCars.Cars.Repository
 
         public async Task<BrandDTO> GetById(int id)
         {
-            Brand brand = await _context.Brands.Where(b => b.BrandId == id).FirstOrDefaultAsync();
+            Brand brand = await _context.Brands.Where(b => b.BrandId == id).Include(b => b.Cars).FirstOrDefaultAsync();
             return _mapper.Map<BrandDTO>(brand);
         }
         public async Task<BrandDTO> Create(BrandDTO dto)

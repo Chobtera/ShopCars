@@ -1,4 +1,6 @@
-﻿namespace ShopCars.Cars.DTO
+﻿using System.Text.Json.Serialization;
+
+namespace ShopCars.Cars.DTO
 {
     public class CarDTO
     {
@@ -7,8 +9,8 @@
         public string? CarDescription { get; set; }
         public string? ImageUrl { get; set; }
         public double Price { get; set; }
-
         public int BrandId { get; set; }
+        [JsonIgnore]
         public BrandDTO? Brand { get; set; }
     }
 }

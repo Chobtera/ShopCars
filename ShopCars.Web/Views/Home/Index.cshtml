@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ShopCars.Web.Models.CarViewModel>
+<link rel="stylesheet" href="/css/car.css" asp-append-version="true" />
+
+<form>
+    <div class="row">
+        @foreach (var car in Model)
+        {
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/images/@car.ImageUrl" width="200" height="200" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@car.CarName</h5>
+                    <p class="card-text">@car.CarDescription</p>
+                    <h5>R$@car.Price</h5>
+                    <a href="#" class="btn btn-primary">Me prensa</a>
+                </div>
+            </div>
+        }
+    </div>
+</form>
