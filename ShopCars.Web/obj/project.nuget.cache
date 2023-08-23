@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "RV9CVDfG85MQUEKmpb7gRv6Dl02O+JDMRFYegK3OmloHlXHUUk0Rv6s3yO47M97IwfISehhylmIRMR/Yhg3tbw==",
+  "dgSpecHash": "Xu9QHNSUtvZzRDEWJ3BWbOPwS1w6zRnvBk9IAP6mi+cOH2fjVoDA/FbSA9fAnQ6Q3PhSPmNyIwO6JoC+xzvC+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Pedro\\Documents\\Programação\\C#\\Projetos\\ShopCars\\ShopCars.Web\\ShopCars.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.21\\microsoft.aspnetcore.authentication.jwtbearer.6.0.21.nupkg.sha512",
+    "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\6.0.21\\microsoft.aspnetcore.authentication.openidconnect.6.0.21.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.10.0\\microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.identitymodel.logging\\6.10.0\\microsoft.identitymodel.logging.6.10.0.nupkg.sha512",
+    "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.10.0\\microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.10.0\\microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
+    "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\Pedro\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

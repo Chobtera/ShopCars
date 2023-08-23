@@ -6,8 +6,8 @@ namespace ShopCars.Web.Services.Contracts
     {
         Task<IEnumerable<CarViewModel>> GetAllCars();
         Task<CarViewModel> FindCarById(int id);
-        Task<CarViewModel> CreateCar(CarViewModel carDTO);
-        Task<CarViewModel> UpdateCar(CarViewModel carDTO);
-        Task<bool> DeleteCarById(int id);
+        Task<CarViewModel> CreateCar(CarViewModel carDTO, string accessToken);
+        Task<CarViewModel> UpdateCar(CarViewModel carDTO, string accessToken);
+        Task<bool> DeleteCarById(int id, string accessToken);
     }
 }

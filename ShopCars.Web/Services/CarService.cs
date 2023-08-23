@@ -59,10 +59,11 @@ namespace ShopCars.Web.Services
 
         }
 
-        public async Task<CarViewModel> CreateCar(CarViewModel car)
+        public async Task<CarViewModel> CreateCar(CarViewModel car, string accessToken)
         {
             var client = _clientFactory.CreateClient("CarsApi");
 
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
             StringContent content = new StringContent(JsonSerializer.Serialize(car), Encoding.UTF8, "application/json");
         
             using (var response = await client.PostAsync(apiEndPoint, content))
@@ -80,9 +81,11 @@ namespace ShopCars.Web.Services
             return carDTO;
         }
 
-        public async Task<CarViewModel> UpdateCar(CarViewModel car)
+        public async Task<CarViewModel> UpdateCar(CarViewModel car, string accessToken)
         {
             var client = _clientFactory.CreateClient("CarsApi");
+
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
 
             CarViewModel carUpdated = new CarViewModel();
 
@@ -103,9 +106,11 @@ namespace ShopCars.Web.Services
             return carUpdated;
         }
 
-        public async Task<bool> DeleteCarById(int id)
+        public async Task<bool> DeleteCarById(int id, string accessToken)
         {
             var client = _clientFactory.CreateClient("CarsApi");
+
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
 
             using (var response = await client.DeleteAsync(apiEndPoint + id))
             {

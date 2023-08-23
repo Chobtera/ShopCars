@@ -7,6 +7,7 @@ using System.Reflection;
 
 namespace ShopCars.Web.Controllers
 {
+    [Authorize]
     public class CarsController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -38,9 +39,10 @@ namespace ShopCars.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> CarCreate(CarViewModel car)
         {
+            string accessToken = await HttpContext.GetTokenAsync("access_token");
             if (ModelState.IsValid)
             {
-                var response = await _carService.CreateCar(car);
+                var response = await _carService.CreateCar(car, accessToken);
                 if (response != null) return RedirectToAction(
                 nameof(Index));
             }
@@ -56,9 +58,10 @@ namespace ShopCars.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> CarUpdate(CarViewModel car)
         {
+            string accessToken = await HttpContext.GetTokenAsync("access_token");
             if (ModelState.IsValid)
             {
-                var response = await _carService.UpdateCar(car);
+                var response = await _carService.UpdateCar(car, accessToken);
                 if (response != null) return RedirectToAction(
                      nameof(Index));
             }
@@ -75,7 +78,8 @@ namespace ShopCars.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> CarDelete(CarViewModel car)
         {
-            var response = await _carService.DeleteCarById(car.CarId);
+            string accessToken = await HttpContext.GetTokenAsync("access_token");
+            var response = await _carService.DeleteCarById(car.CarId, accessToken);
             if (response) return RedirectToAction(
                     nameof(Index));
             return View();

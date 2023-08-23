@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KQzGJKr4jUqs0wrPoK5+bZIhn60+NWNPqmF+Na/dUA4/Rc7ThSNDz3Pw31h/jV29F8KDupjOKhkuCvQB1HeQ+g==",
+  "dgSpecHash": "lGtBTXZsSQyNRazeGhTEMxOhRHo7fmTI8qnglaLXfeKT6zXJZqrPJq9qxQyH+d6CtbVUpjDdLHekrjKiYsaWdw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Pedro\\Documents\\Programação\\C#\\Projetos\\ShopCars\\ShopCars.Cars\\ShopCars.Cars.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,8 @@
     "C:\\Users\\Pedro\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Pedro\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Pedro\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.21\\microsoft.aspnetcore.authentication.jwtbearer.6.0.21.nupkg.sha512",
+    "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\6.0.21\\microsoft.aspnetcore.authentication.openidconnect.6.0.21.nupkg.sha512",
     "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Pedro\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",

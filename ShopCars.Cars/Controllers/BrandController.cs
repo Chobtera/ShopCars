@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShopCars.Cars.Context;
 using ShopCars.Cars.DTO;
@@ -30,6 +31,7 @@ namespace ShopCars.Cars.Controllers
             var brand = await _repository.GetById(id);
             return Ok(brand);
         }
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<BrandDTO>> Create(BrandDTO dto)
         {
@@ -37,6 +39,7 @@ namespace ShopCars.Cars.Controllers
             var brand = await _repository.Create(dto);
             return Ok(brand);
         }
+        [Authorize]
         [HttpPut]
         public async Task<ActionResult<BrandDTO>> Update(BrandDTO dto)
         {
@@ -44,6 +47,7 @@ namespace ShopCars.Cars.Controllers
             var brand = await _repository.Update(dto);
             return Ok(brand);
         }
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
